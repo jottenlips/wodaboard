@@ -1,0 +1,25 @@
+name: "WODaboard"
+on:
+  schedule:
+    # utc time zone
+    # daily @ 8am cst
+    - cron: "0 13 * * *"
+  # or run on dispatch
+  workflow_dispatch:
+
+jobs:
+  wod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - run: |
+          bun install
+          bun run index.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VB_SUB_ID: ${{ secrets.VB_SUB_ID }}
+          VB_SUB_KEY: ${{ secrets.VB_SUB_KEY }}
+          VB_SUB_SECRET: ${{ secrets.VB_SUB_SECRET }}
