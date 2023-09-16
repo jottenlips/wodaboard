@@ -15,7 +15,7 @@ const days = {
 } as { [key: number]: IDays };
 type IDays = "sunday" | "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday";
 
-const randomWorkoutPlan = () => {
+const main = () => {
   const day = new Date().getDay();
   const dayName = days[day];
   const intensity = day % 3 === 0 ? "hard" : day % 2 === 0 ? "medium" : "easy";
@@ -41,4 +41,4 @@ const sendMessage = async (text: string) => {
   }
 };
 
-randomWorkoutPlan();
+main();
