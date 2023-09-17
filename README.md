@@ -8,7 +8,7 @@ This Github Action workflow also posts the message to [workoutoftheday@mastodon.
 touch .env
 ```
 
-# Create a Vestaboard Installable/Subscription
+# Create your own Vestaboard Installable/Subscription
 
 Use the web app's API tab to create an installable for your Vestaboard.
 Once you have the subscription id, api key, and api secret, add them to your .env for running locally
