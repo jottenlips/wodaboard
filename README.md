@@ -1,14 +1,12 @@
 # 💪 WODaboard 🏋️
 
-"Workout Of the Day" on Vestaboard
+"Workout Of the Day" sent to a Vestaboard. This is an example of how you can use the Vestaboard developer API to send messages to your Vestaboard.
 
-This Github Action workflow also posts the Vestbaord message to the [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
+This Github Action workflow also posts the message to [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
 
-```
-touch .env
-```
+⚠️ Disclaimer: These workouts are random and vary in intensity. I am not a personal trainer, so seek professional advice before following my dummy data.
 
-# Create a Vestaboard Installable/Subscription
+# Create your own Vestaboard Installable/Subscription
 
 Use the web app's API tab to create an installable for your Vestaboard.
 Once you have the subscription id, api key, and api secret, add them to your .env for running locally
