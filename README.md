@@ -4,10 +4,6 @@
 
 This Github Action workflow also posts the message to [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
 
-```
-touch .env
-```
-
 # Create your own Vestaboard Installable/Subscription
 
 Use the web app's API tab to create an installable for your Vestaboard.
