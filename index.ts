@@ -25,7 +25,7 @@ type IDays =
 const main = async () => {
   const day = new Date().getDay();
   const dayName = days[day];
-  const intensity = day % 1 === 0 ? "hard" : day % 2 === 0 ? "medium" : "easy";
+  const intensity = day % 3 === 1 ? "hard" : day % 3 === 2 ? "medium" : "easy";
   const exercises = randomFourExercises(intensity);
   const color =
     intensity === "hard" ? "{63}" : intensity === "medium" ? "{65}" : "{66}";
