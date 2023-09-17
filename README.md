@@ -4,6 +4,8 @@
 
 This Github Action workflow also posts the message to [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
 
+Disclaimer: These workouts are random and vary in intensity. I am not a personal trainer so seek professional advice before following my dummy data.
+
 # Create your own Vestaboard Installable/Subscription
 
 Use the web app's API tab to create an installable for your Vestaboard.
