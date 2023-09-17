@@ -25,9 +25,10 @@ type IDays =
 const main = async () => {
   const day = new Date().getDay();
   const dayName = days[day];
-  const intensity = day % 3 === 0 ? "hard" : day % 2 === 0 ? "medium" : "easy";
+  const intensity = day % 1 === 0 ? "hard" : day % 2 === 0 ? "medium" : "easy";
   const exercises = randomFourExercises(intensity);
-  const color = day % 3 === 0 ? "{63}" : day % 2 === 0 ? "{65}" : "{66}";
+  const color =
+    intensity === "hard" ? "{63}" : intensity === "medium" ? "{65}" : "{66}";
   const text = `${color}Happy ${dayName}!${color}\nToday's WOD is:\n${exercises}`;
   console.log(text);
   await sendMessage(text);
