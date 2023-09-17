@@ -2,7 +2,7 @@
 
 "Workout Of the Day" sent to a Vestaboard
 
-This Github Action workflow also posts the Vestbaord message to the [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
+This Github Action workflow also posts the message to [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
 
 ```
 touch .env
