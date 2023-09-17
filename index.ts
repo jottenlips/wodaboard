@@ -66,7 +66,7 @@ const sendMastodonMessage = async (text: string) => {
         Authorization: `Bearer ${process.env.MASTODON_ACCESS_TOKEN}`,
         "Idempotency-Key": `${Date.now()}`,
       },
-      body: `status=${encodeURIComponent(status)}`,
+      body: `status=${encodeURIComponent(status + `\n#workoutoftheday`)}`,
     });
   }
 };
