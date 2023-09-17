@@ -1,6 +1,6 @@
 # 💪 WODaboard 🏋️
 
-"Workout Of the Day" on Vestaboard
+"Workout Of the Day" sent to a Vestaboard
 
 This Github Action workflow also posts the Vestbaord message to the [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
 
