@@ -1,6 +1,6 @@
-# WODaboard
+# 💪 WODaboard 🏋️
 
-💪 "Workout Of the Day" on Vestaboard 
+"Workout Of the Day" on Vestaboard 
 
 ```
 touch .env
@@ -20,7 +20,7 @@ VB_SUB_SECRET=yoursubscriptionapisecret
 ```
 
 ```
-# send a wod to your Vestaboard
+# send a WOD to your Vestaboard
 bun run index.ts
 ```
 
