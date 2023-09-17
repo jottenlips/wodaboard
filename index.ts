@@ -13,9 +13,16 @@ const days = {
   5: "friday",
   6: "saturday",
 } as { [key: number]: IDays };
-type IDays = "sunday" | "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday";
+type IDays =
+  | "sunday"
+  | "monday"
+  | "tuesday"
+  | "wednesday"
+  | "thursday"
+  | "friday"
+  | "saturday";
 
-const main = () => {
+const main = async () => {
   const day = new Date().getDay();
   const dayName = days[day];
   const intensity = day % 3 === 0 ? "hard" : day % 2 === 0 ? "medium" : "easy";
@@ -23,7 +30,8 @@ const main = () => {
   const color = day % 3 === 0 ? "{63}" : day % 2 === 0 ? "{65}" : "{66}";
   const text = `${color}Happy ${dayName}!${color}\nToday's WOD is:\n${exercises}`;
   console.log(text);
-  sendMessage(text);
+  await sendMessage(text);
+  await sendMastodonMessage(text);
 };
 
 const sendMessage = async (text: string) => {
@@ -37,6 +45,27 @@ const sendMessage = async (text: string) => {
       body: JSON.stringify({
         text,
       }),
+    });
+  }
+};
+
+const sendMastodonMessage = async (text: string) => {
+  const status = text
+    .replace("{66}", "🟩 ")
+    .replace("{66}", " 🟩")
+    .replace("{65}", "🟨 ")
+    .replace("{65}", " 🟨")
+    .replace("{63}", "🟥 ")
+    .replace("{63}", " 🟥");
+
+  if (process.env.MASTODON_ACCESS_TOKEN) {
+    await fetch(`https://mastodon.social/api/v1/statuses`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.MASTODON_ACCESS_TOKEN}`,
+        "Idempotency-Key": `${Date.now()}`,
+      },
+      body: `status=${encodeURIComponent(status)}`,
     });
   }
 };

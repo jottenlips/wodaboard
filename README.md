@@ -1,6 +1,8 @@
 # 💪 WODaboard 🏋️
 
-"Workout Of the Day" on Vestaboard 
+"Workout Of the Day" on Vestaboard
+
+This Github Action workflow also posts the Vestbaord message to the [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
 
 ```
 touch .env
@@ -17,10 +19,14 @@ or your GitHub action secrets for running with a GitHub workflow as a cron job. 
 VB_SUB_ID=yoursubscriptionid
 VB_SUB_KEY=yoursubscriptionapikey
 VB_SUB_SECRET=yoursubscriptionapisecret
+
+# (optional to post to Mastodon)
+MASTODON_ACCESS_TOKEN=
 ```
 
 ```
 # send a WOD to your Vestaboard
+bun install
 bun run index.ts
 ```
 
