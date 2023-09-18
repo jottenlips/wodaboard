@@ -29,3 +29,5 @@ bun run index.ts
 ```
 
 You can find more information on Vestaboard subscriptions at https://docs.vestaboard.com. Happy hacking!
+
+[Issue with delay on GitHub actions during peak traffic times](https://github.com/orgs/community/discussions/52477)
