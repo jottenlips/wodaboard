@@ -1,8 +1,8 @@
 const exerciseGroups = {
     push: ["pushups", "dips"],
-    pull: ["pullups", "hangs"],
-    hinge: ["situps", "hollow holds", "planks", "leg raises"],
-    squat: ["squats", "side lunges", "starfish", "alt lunges", "calf raises"],
+    pull: ["pullups", "hangs", "lockoffs"],
+    hinge: ["situps", "hollow holds", "planks", "leg raises", "starfish", "supermans"],
+    squat: ["squats", "side lunges", "alt lunges", "calf raises"],
 }
 
 const exerciseIntensities = {
@@ -51,29 +51,29 @@ const exerciseIntensities = {
     hangs: {
         easy: {
             sets: 3,
-            duration: "20s",
+            duration: "30s",
         },
         medium: {
             sets: 3,
-            duration: "30s",
+            duration: "40s",
         },
         hard: {
             sets: 3,
-            duration: "40s",
+            duration: "60s",
         },
     },
     lockoffs: {
         easy: {
             sets: 3,
-            duration: "20s",
+            duration: "30s",
         },
         medium: {
             sets: 3,
-            duration: "30s",
+            duration: "40s",
         },
         hard: {
             sets: 3,
-            duration: "40s",
+            duration: "60s",
         },
     },
     situps: {
@@ -93,29 +93,29 @@ const exerciseIntensities = {
     "hollow holds": {
         easy: {
             sets: 3,
-            duration: "20s",
+            duration: "30s",
         },
         medium: {
             sets: 3,
-            duration: "30s",
+            duration: "40s",
         },
         hard: {
             sets: 3,
-            duration: "40s",
+            duration: "60s",
         },
     },
     planks: {
         easy: {
             sets: 3,
-            duration: "20s",
+            duration: "30s",
         },
         medium: {
             sets: 3,
-            duration: "30s",
+            duration: "40s",
         },
         hard: {
             sets: 3,
-            duration: "40s",
+            duration: "60s",
         },
     },
     "leg raises": {
@@ -135,15 +135,15 @@ const exerciseIntensities = {
     supermans: {
         easy: {
             sets: 3,
-            duration: "20s",
+            duration: "30s",
         },
         medium: {
             sets: 3,
-            duration: "30s",
+            duration: "40s",
         },
         hard: {
             sets: 3,
-            duration: "40s",
+            duration: "60s",
         },
     },
     "starfish": {
