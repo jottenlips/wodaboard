@@ -1,4 +1,4 @@
-name: "WODaboard"
+name: "notify-deployment"
 on:
   push:
     branches:
