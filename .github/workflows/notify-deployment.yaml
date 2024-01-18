@@ -13,7 +13,7 @@ jobs:
         with:
           bun-version: latest
       - run: |
-          curl -X POST -H "x-vestaboard-api-key: $VB_SUB_KEY" -H "x-vestaboard-api-secret: $VB_SUB_SECRET" -H "Content-Type: application/json" -D '{"text": "{64} New Wodaboard Deployment!"}'  https://subscriptions.vestaboard.com/subscriptions/$VB_SUB_ID/message
+          curl -X POST -H "x-vestaboard-api-key: $VB_SUB_KEY" -H "x-vestaboard-api-secret: $VB_SUB_SECRET" -H "Content-Type: application/json" -d '{"text": "{64} New Wodaboard Deployment!"}'  https://subscriptions.vestaboard.com/subscriptions/$VB_SUB_ID/message
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VB_SUB_ID: ${{ secrets.VB_SUB_ID }}
