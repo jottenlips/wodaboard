@@ -1,5 +1,9 @@
 # 💪 WODaboard 🏋️
 
+Checkout my full blog post on [docs.vestaboard.com](https://docs.vestaboard.com/blog/vestaboard-github-actions)
+
+----------
+
 "Workout Of the Day" sent to a Vestaboard. This is an example of how you can use the Vestaboard developer API to send messages to your Vestaboard.
 
 This Github Action workflow also posts the message to [workoutoftheday@mastodon.social](https://mastodon.social/@workoutoftheday).
