@@ -24,7 +24,7 @@ type Days =
 
 type Intensity = "easy" | "medium" | "hard";
 // hardcode to easy for now
-const intensity = "medium" as Intensity
+const intensity = "easy" as Intensity
 
 const main = async () => {
   const day = new Date().getDay();
