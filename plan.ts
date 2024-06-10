@@ -1,7 +1,7 @@
 const exerciseGroups = {
     push: ["pushups", "dips"],
     pull: ["pullups", "hangs", "lockoffs"],
-    hinge: ["situps", "hollow holds", "planks", "leg raises", "starfish", "supermans"],
+    hinge: ["situps", "hollow holds", "planks", "leg raises", "supermans"],
     squat: ["squats", "side lunges", "alt lunges", "calf raises"],
 }
 
