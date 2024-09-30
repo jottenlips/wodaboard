@@ -1,11 +1,53 @@
 const exerciseGroups = {
-    push: ["pushups", "dips"],
-    pull: ["pullups", "hangs", "lockoffs"],
+    push: ["pushups", "dips", "scapular pushups", "shoulder taps", "lateral raises"],
+    pull: ["pullups", "hangs", "lockoffs", "rows"],
     hinge: ["situps", "hollow holds", "planks", "leg raises", "supermans"],
-    squat: ["squats", "side lunges", "alt lunges", "calf raises"],
+    squat: ["squats", "side lunges", "alt lunges", "calf raises", "pistol squats"],
 }
 
 const exerciseIntensities = {
+    "lateral raises": {
+        easy: {
+            reps: 10,
+            sets: 3,
+        },
+        medium: {
+            reps: 15,
+            sets: 3,
+        },
+        hard: {
+            reps: 20,
+            sets: 3,
+        },
+    },
+    "scapular pushups": {
+        easy: {
+            reps: 10,
+            sets: 3,
+        },
+        medium: {
+            reps: 15,
+            sets: 3,
+        },
+        hard: {
+            reps: 20,
+            sets: 3,
+        },
+    },
+    rows: {
+        easy: {
+            reps: 10,
+            sets: 3,
+        },
+        medium: {
+            reps: 15,
+            sets: 3,
+        },
+        hard: {
+            reps: 20,
+            sets: 3,
+        },
+    },
     pushups: {
         easy: {
             reps: 10,
@@ -217,6 +259,34 @@ const exerciseIntensities = {
             sets: 3,
         },
     },
+    "pistol squats": {
+        easy: {
+            reps: 5,
+            sets: 2
+        },
+        medium: {
+            reps: 5,
+            sets: 3
+        },
+        hard: {
+            reps: 8,
+            sets: 3
+        }
+    },
+    "shoulder taps": {
+        easy: {
+            reps: 10,
+            sets: 3
+        },
+        medium: {
+            reps: 15,
+            sets: 3
+        },
+        hard: {
+            reps: 20,
+            sets: 3
+        }
+    }
 }
 
 export const randomFourExercises = (intensity: string) => {
