@@ -2,8 +2,8 @@ name: "WODaboard"
 on:
   schedule:
     # utc time zone
-    # daily @ 4pm cst
-    - cron: "0 21 * * *"
+    # daily @ 6pm cst
+    - cron: "0 23 * * *"
   # or run on dispatch
   workflow_dispatch:
 
