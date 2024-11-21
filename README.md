@@ -1,4 +1,5 @@
 # 💪 WODaboard 🏋️
+> workout of the day
 
 Checkout my full blog post on [docs.vestaboard.com](https://docs.vestaboard.com/blog/vestaboard-github-actions)
 
