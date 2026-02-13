@@ -1,7 +1,7 @@
 const exerciseGroups = {
     push: ["pushups", "dips", "scapular pushups", "shoulder taps", "lateral raises"],
     pull: ["pullups", "hangs", "lockoffs", "rows"],
-    hinge: ["situps", "hollow holds", "planks", "leg raises", "supermans"],
+    hinge: ["situps", "hollow holds", "planks", "leg raises", "supermans", "russian twists"],
     squat: ["squats", "side lunges", "alt lunges", "calf raises", "pistol squats"],
 }
 
@@ -274,6 +274,20 @@ const exerciseIntensities = {
         }
     },
     "shoulder taps": {
+        easy: {
+            reps: 10,
+            sets: 3
+        },
+        medium: {
+            reps: 15,
+            sets: 3
+        },
+        hard: {
+            reps: 20,
+            sets: 3
+        }
+    },
+    "russian twists": {
         easy: {
             reps: 10,
             sets: 3
